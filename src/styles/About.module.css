@@ -1,0 +1,255 @@
+/*=============== ABOUT ===============*/
+
+.about {
+    padding-top: 8rem;
+    margin-top: 5rem;
+}
+
+.about__container {
+    row-gap: 2.5rem;
+}
+
+.about__img {
+    width: 220px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+
+.about__data {
+    text-align: center;
+}
+
+.about__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+    margin-bottom: 2rem;
+}
+
+.about__box {
+    background-color: var(--container-color);
+    border-radius: .75rem;
+    padding: .75rem .5rem;
+}
+
+.about__icon {
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: .5rem;
+}
+
+.about__title {
+    font-size: var(--small-font-size);
+}
+
+.about__subtitle {
+    font-size: var(--tiny-font-size);
+}
+
+.about__description {
+    margin-bottom: 2rem;
+}
+
+.about__more__button:hover .about__button-icon {
+    transform: translateX(.25rem);
+}
+
+.about__button-icon {
+    transition: .4s;
+}
+
+.leadership__section{
+    padding-top: 6rem;
+}
+
+.leadership__title{
+    margin-top: 1rem;
+}
+
+.about__details {
+    padding-top: 2.5rem;
+    margin-top: 5rem;
+}
+
+.leadership__img{
+    display: flex;
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+    padding: 0;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    
+}
+
+
+.leadership__container{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.leadership__description__title{
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.right__leadership{
+    display: flex;
+
+    justify-content: flex-end;
+    padding-right: 7rem;
+}
+.left__leadership{
+    display: flex;
+    gap:3rem;
+    justify-content: flex-end;
+    padding-right: 8rem;
+}
+
+.leadership__scroll_button {
+    color: var(--first-color);
+    transition: .3s;
+  }
+  
+  .leadership__scroll_button:hover {
+    transform: translateY(.25rem);
+  }
+
+  .leadership__scroll {
+    display: block;
+  }
+  
+  
+  .leadership__scroll_mouse {
+    font-size: 2rem;
+    margin-right: .7rem;
+    color: var(--first-color);
+  }
+  
+  .leadership__scroll_name {
+    font-size: var(--h3-font-size);
+    font-weight: bold;
+    color: var(--title-color);
+    margin-right: .25rem;
+  }
+  
+  .leadership__scroll_arrow {
+    font-size: 1.2rem;
+    color: var(--first-color);
+    font-weight: bold;
+  }
+
+.about__leadership__description{
+    margin-bottom: 1.3rem ;
+}
+
+.leadership__data{
+    width: 760px;
+}
+
+
+
+@media screen and (max-width : 350px) {
+    .about__info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .about{
+        padding-top: 2.3rem;
+    }
+
+    .about__container{
+        padding-top: 10%;
+    }
+
+    .leadership__title{
+        font-size: 2.1rem;
+    }
+
+    .leadership__section{
+        padding-left: 10%;
+        padding-top: 4rem;
+    }
+
+    .right__leadership{
+        padding-right: initial;
+        justify-content: center;
+        gap: 3rem;
+      }
+    
+      .left__leadership{
+        padding-right: initial;
+        justify-content: center;
+        
+      }
+    
+      .leadership__img{
+        width: 40%;
+      }
+    
+      .about__details{
+        padding-top: 0;
+        margin-top: 3rem;
+        width: 95%;
+      }
+    
+      .about__details__title,
+      .about__details__container{
+        padding-left: 7%;
+      }
+    
+      .about__details__title{
+        font-size: 1.9rem;
+      }
+    
+    
+    
+      .leadership__container{
+        margin-top: 3rem;
+      }
+}
+
+@media screen and (min-width: 568px) {
+    .about__info {
+        grid-template-columns: repeat(3, 140px);
+        justify-content: center;
+    }
+
+    .about__description {
+        padding: 0 5rem;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .about__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 4rem;
+    }
+
+    .about__img {
+        width: 350px;
+    }
+
+    .about__data {
+        text-align: initial;
+    }
+
+    .about__info {
+        justify-content: initial;
+    }
+
+    .about__box {
+        text-align: center;
+        padding: 1rem 1.25rem;
+    }
+
+    .about__description {
+        padding: 0 4rem 0 0;
+        margin-bottom: 2.5rem;
+    }
+}

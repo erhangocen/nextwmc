@@ -1,0 +1,21 @@
+.lost__container{
+    height: 100vh;
+    display: flex;
+    width: fit-content;
+}
+
+.lost__main__title{
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.lost__title{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.lost__img{
+    border-radius: 50%;
+    width: 87%;
+}

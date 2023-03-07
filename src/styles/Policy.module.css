@@ -1,0 +1,26 @@
+.policy__container{
+    width: 70%;
+}
+
+.policy__section{
+    display: flex;
+    justify-content: center;
+}
+
+.policy__container h3{
+    margin-top: 2.8rem;
+}
+
+.policy__container p{
+    line-height: 2rem;
+}
+
+@media screen and (max-width : 500px) {
+    .policy__container{
+        width: 90%;
+    }
+
+    .policy__section{
+        padding-top: 1.5rem;
+    }
+}

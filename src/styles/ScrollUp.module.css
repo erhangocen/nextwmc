@@ -1,0 +1,32 @@
+/*=============== SCROLL UP ===============*/
+
+.scrollup {
+    position: fixed;
+    left: 2rem;
+    bottom: -20%;
+    background-color: var(--first-color);
+    opacity: .8;
+    padding: .3rem;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+
+.scrollup:hover {
+    background-color: var(--first-color-alt);
+}
+
+.show_scroll {
+    bottom: 2.5rem;
+}
+
+.scrollup__icon {
+    font-size: 2rem;
+    color: #FFF;
+  }
+
+@media screen and (max-width: 500px){
+    .scrollup{
+        left: 1rem;
+    }
+}
