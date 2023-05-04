@@ -19,7 +19,7 @@ export default function BasicTestimonialCard(props) {
         (max-width: 1200px) 50vw,
         33vw"
         src={props.profilePhoto}
-        alt="westernmoney__testimonial"
+        alt={props.name}
         className={styles.testimonial__img}
       />
       <div style={{ display: "flex", flexDirection: "row", gap: ".7rem" }}>

@@ -49,7 +49,8 @@ export default function Document() {
         <title>Western Money Consulting</title>
         </Head>
         <body>
-            <Main />
+        
+            <Main/>
             <NextScript />
         </body>
     </Html>

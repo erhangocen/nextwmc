@@ -11,6 +11,7 @@ import FadeAnimation from "@/product/FadeAnimation";
 import Zoom from 'react-reveal/Zoom';
 import { Fade } from "react-reveal";
 import { FaAward, FaBriefcase, FaHeadset, FaCrown, FaArrowDown } from "react-icons/fa";
+import LeadershipList from "@/product/Objects/LeadershipList";
 
 export default function AboutDetails() {
   return (
@@ -67,39 +68,23 @@ export default function AboutDetails() {
 
       <div className={styles.leadership__section} id="leadership">
         <h2 className={`section__title ${styles.leadership__title}` }>- Leadership -</h2>
-        <AboutCard 
-          name="Mehmet Toptaş" 
-          right={false} 
-          imageSrc={mehmetImg}
-          experience="5+ Years"
-          consuled="20+ Business"
-          support="Online 7/24"
-          about="I'm Mehmet Toptaş, A loudmouth who is highly disciplined, won the war with himself and started the war against the world, and is known for adapting quickly and getting out of the situations somehow. I don't like excuses and I always move forward to reach the goal. I never hesitate to do extraordinary things for my ideals and mission. I think it must be due to my upbringing. I grew up accepting that if I wanted something, I had to fight for it. And that fight seems to continue a lifetime."
-        />
-        <AboutCard 
-          name="Erhan Göcen" 
-          right={true} 
-          imageSrc={erhanImg}
-          experience="4+ Years"
-          consuled="10+ Business"
-          support="Online 7/24"
-          about="I've been started developing software projects since early high school.
-            Besides that, I've been interested SEO, social media marketting and advertising.
-            Now, I am studying at university and freelancing.
-            As my teachers always say, I am a very hardworking person.
-            I am successful in my studieds and working about developing web application, SEO and marketting at the same time.
-            I am young, ambitious and hardworking. Despite my young age, my experience in my job is quite high. No one ever regretted choosing me before.
-            "
-        />
-        <AboutCard 
-          name="Deniz Mengüş" 
-          right={false}
-          imageSrc={denizImg}
-          experience="3+ Years"
-          consuled="10+ Business"
-          support="Online 7/24"
-          about="Hi, I am Deniz. Thats it."
-        />
+
+        {
+          LeadershipList.map((leadership)=>(
+            <AboutCard 
+              name={leadership.name} 
+              right={leadership.right} 
+              imageSrc={leadership.imageSrc}
+              experience={leadership.experience}
+              consuled={leadership.consuled}
+              support={leadership.support}
+              about={leadership.about}
+              linkedin={leadership.linkedin}
+              twitter={leadership.twitter}
+              instagram={leadership.instagram}
+            />
+          ))
+        }
       </div>
     </section>
   );
