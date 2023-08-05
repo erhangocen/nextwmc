@@ -1,22 +1,16 @@
 import React from "react";
-import RouterButton from "../product/RouterButton";
 import AboutCard from "../product/AboutCard";
-import denizImg from "../assets/img/deniz.jpeg"
-import mehmetImg from "../assets/img/mehmet.jpeg"
-import erhanImg from "../assets/img/erhan.jpeg"
 import logo from "../assets/img/wmcLogooo.png"
 import styles from "../styles/About.module.css";
 import Image from "next/image";
-import FadeAnimation from "@/product/FadeAnimation";
-import Zoom from 'react-reveal/Zoom';
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { FaAward, FaBriefcase, FaHeadset, FaCrown, FaArrowDown } from "react-icons/fa";
 import LeadershipList from "@/product/Objects/LeadershipList";
 
 export default function AboutDetails() {
   return (
     <section className={`${styles.about__details} section`} id="about" data-aos="fade-top">
-      <Fade>
+      <Fade triggerOnce>
       <h2 className={`${styles.about__details__title} section__title`}>- Who We Are -</h2>
       <div className={`${styles.about__container} ${styles.about__details__container} container grid` }>
         <div className={"d-flex justify-content-center"}>

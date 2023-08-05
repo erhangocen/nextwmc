@@ -1,8 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { InlineWidget } from "react-calendly";
-import { Fade } from 'react-reveal';
-import Zoom from 'react-reveal/Zoom';
+import { Fade } from 'react-awesome-reveal';
 
 
 export default function Calednly() {
@@ -15,7 +14,7 @@ export default function Calednly() {
 
     return (
         <section className="section pt-3">
-          <Fade>
+          <Fade triggerOnce>
           <>
             <div className="calendly__title__container" id='calender'>
                 <h2 className="calendly__title section__title mb-0">Set A Meeting</h2>

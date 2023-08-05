@@ -6,8 +6,7 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import styles from "../styles/Contact.module.css"
-import Zoom from 'react-reveal/Zoom';
-import { Fade } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 import { FaArrowRight, FaFacebookF, FaLinkedinIn, FaTwitter, FaPaperPlane } from 'react-icons/fa';
 
 export default function Contact() {
@@ -92,7 +91,7 @@ export default function Contact() {
 
   return (
     <section className={`${styles.contact} section`} id="contact">
-        <Fade>
+        <Fade triggerOnce>
         <h2 className={`${styles.contacts__title} section__title`}>Contact Us</h2>
         <div className={`${styles.contact__container} container grid`}>
             <div className={styles.contact__content}>

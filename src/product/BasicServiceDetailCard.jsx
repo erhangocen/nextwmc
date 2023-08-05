@@ -2,7 +2,7 @@ import React from 'react'
 import LazyLoad from 'react-lazy-load';
 import styles from "../styles/ServiceDetails.module.css"
 import Image from 'next/image';
-import { Fade, Zoom } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 import { FaExpandArrowsAlt } from 'react-icons/fa';
 
 
@@ -13,7 +13,7 @@ export default function BasicServiceDetailCard(props) {
   };
 
   return (
-    <Fade>
+    <Fade triggerOnce triggerOnce>
       <div style={{ position: "relative", width:"100%"}}>
         <div style={{ position: "relative" }}>
           <LazyLoad>

@@ -3,7 +3,6 @@ import About from './About'
 import Services from './Services'
 import Contact from './Contact'
 import styles from "../styles/Main.module.css"
-import Zoom from "react-reveal/Zoom";
 import dynamic from "next/dynamic";
 import LoadingPage from "@/product/LoadingPage";
 import Home from "./Home";

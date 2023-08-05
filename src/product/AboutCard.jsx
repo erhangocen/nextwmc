@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import LazyLoad from "react-lazy-load";
 import styles from "../styles/About.module.css";
 import Image from "next/image";
-import Zoom from "react-reveal/Zoom";
+import Zoom from "react-awesome-reveal";
 import { FaAward, FaBriefcase, FaHeadset } from "react-icons/fa";
 import { FaArrowDown, FaCalendarAlt, FaHome, FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
@@ -16,7 +16,7 @@ export default function AboutCard(props) {
   }, []);
 
   return (
-    <Zoom>
+    <Zoom triggerOnce>
       <div className={styles.leadership__container} data-aos="fade-top" style={{}}>
         <div
           className={

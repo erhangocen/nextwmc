@@ -5,8 +5,7 @@ import BasicServiceCard from "../product/BasicServiceCard";
 import styles from "../styles/Services.module.css";
 import ServiceList from "../product/Objects/ServiceList";
 import { useRouter } from "next/router";
-import FadeAnimation from "@/product/FadeAnimation";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 export default function Services() {
   const router = useRouter();
@@ -16,7 +15,7 @@ export default function Services() {
       className={`${styles.services} section ${styles.services__section}`}
       id="services"
     >
-      <Fade>
+      <Fade triggerOnce>
         <>
           <div className={styles.services__content}>
             <h2 className={"section__title"}>TOP SERVICES</h2>

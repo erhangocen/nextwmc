@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/ExpandedService.module.css";
 import Image from "next/image";
-import Zoom from 'react-reveal/Zoom';
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 export default function ExpandedService(props) {
   const [currenstService, setCurrenstService] = useState({});
@@ -19,7 +18,7 @@ export default function ExpandedService(props) {
   });
 
   return (
-    <Fade>
+    <Fade triggerOnce>
       {currenstService ? (
         <div>
           <div

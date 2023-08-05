@@ -3,8 +3,6 @@ import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import styles from "../styles/Home.module.css";
 import RouterButton from "../product/RouterButton";
-import Fade from "react-reveal/Fade";
-import Reveal from "react-reveal/Reveal";
 import FadeAnimation from "@/product/FadeAnimation";
 import videoBgPoster from "../assets/img/videoBgPoster.png";
 import {

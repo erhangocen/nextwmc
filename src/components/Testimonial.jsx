@@ -11,15 +11,14 @@ import BasicTestimonialCard from "../product/BasicTestimonialCard";
 import styles from "../styles/Testimonaial.module.css"
 import TestimonialList from "../product/Objects/TestimonialList";
 import FadeAnimation from "@/product/FadeAnimation";
-import Zoom from 'react-reveal/Zoom';
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 export default function Testimonial() {
   return (
     <section
       className={`${styles.testimonial} section`}
       id="testimonial"
-    > <Fade>
+    > <Fade triggerOnce>
       <>
       <h2 className={`${styles.testimonial__title} section__title`}>Testimonials</h2>
       <div className={`${styles.testimonial__container} ${styles.swipper} container swiper`}>
