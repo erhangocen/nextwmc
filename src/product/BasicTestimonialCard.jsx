@@ -1,9 +1,12 @@
-'use client';
+"use client";
 import React from "react";
 import ReactStars from "react-rating-stars-component";
-import styles from "../styles/Testimonaial.module.css"
+import styles from "../styles/Testimonaial.module.css";
 import Image from "next/image";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Button } from "@mui/material";
+import { ShoppingCartRounded } from "@mui/icons-material";
+import VideoModal from "./VideoModal";
 
 export default function BasicTestimonialCard(props) {
   const ratingChanged = (newRating) => {
@@ -37,14 +40,22 @@ export default function BasicTestimonialCard(props) {
       </div>
 
       {props.job ? (
-        <div className={`${styles.testimonial__description} ${styles.testimonial__job} mb-3`  }>
+        <div
+          className={`${styles.testimonial__description} ${styles.testimonial__job} mb-3`}
+        >
           {props.job}
         </div>
       ) : null}
 
-      <p className={styles.testimonial__description} style={props.descriptionStyle}>
+      <p
+        className={styles.testimonial__description}
+        style={props.descriptionStyle}
+      >
         {props.description}
       </p>
+      {props.videoUrl ? (
+        <VideoModal videoUrl={props.videoUrl}/>
+      ) : null}
     </>
   );
 }

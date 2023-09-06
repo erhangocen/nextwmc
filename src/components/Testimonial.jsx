@@ -45,6 +45,7 @@ export default function Testimonial() {
                 job={testimonial.job}
                 rate={testimonial.rate}
                 descriptionStyle={{display:"-webkit-box",WebkitLineClamp:"2", WebkitBoxOrient:"vertical", overflow:"hidden", textOverflow:"ellipsis"}}
+                videoUrl={testimonial.videoUrl}              
               />
             </div>
             </SwiperSlide>

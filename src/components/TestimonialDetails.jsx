@@ -36,6 +36,7 @@ export default function TestimonialDetails() {
                 description={testimonial.description}
                 job={testimonial.job}
                 rate={testimonial.rate}
+                videoUrl={testimonial.videoUrl}
               />
             </div>
           ))}

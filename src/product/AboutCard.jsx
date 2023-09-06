@@ -87,9 +87,6 @@ export default function AboutCard(props) {
               :
               null
               }
-              
-              
-              
               {
                 props.instagram?
                 <a

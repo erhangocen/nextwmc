@@ -6,6 +6,7 @@ import milo from "../../assets/img/milo.webp";
 import liGuowei from "../../assets/img/liGuowei.webp";
 import ethan from "../../assets/img/ethan.webp";
 import nico from "../../assets/img/nico.webp";
+import miley from "../../assets/img/miley.webp";
 
 const TestimonialList = [
   {
@@ -15,6 +16,14 @@ const TestimonialList = [
       "I would like to personally thank Mehmet and the team for their absolutely incredible work!",
     job: "Dentist",
     rate: 4.5
+  },
+  {
+    profilePhoto: miley,
+    name: "Miley Pearon",
+    description: " In this market, I am really happy to work with WMC and I couldn’t think of anybody better! They understand teach communicate and respect. ",
+    job: "Med Spa Owner",
+    videoUrl: "d",
+    rate: 5
   },
   {
     profilePhoto: nico,
@@ -59,11 +68,10 @@ const TestimonialList = [
   {
     profilePhoto: charlotte,
     name: "Charlotte Krugson",
-    description:
-      "I've been approached by many SMMA Agencies and I can say (with all my heart) this team was by far the best one, They are highly responsive, understanding, and easy to communicate. Helped through my every milestone and yet still keeping up the brilliant work!",
-      job: "Esthetician",
-      rate: 5
-  },
+    description: "I've been approached by many SMMA Agencies and I can say (with all my heart) this team was by far the best one, They are highly responsive, understanding, and easy to communicate. Helped through my every milestone and yet still keeping up the brilliant work!",
+    job: "Esthetician",
+    rate: 5
+  }
   
 ];
 
