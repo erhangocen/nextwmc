@@ -40,7 +40,7 @@ export default function VideoModal(props) {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <video className={`lazy w-100`} height={700} autoPlay loop muted playsInline>
+        <video className={`lazy w-100`} height={550} controls >
           <source src="/miley.mp4" />
         </video>
       </Dialog>
